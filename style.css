@@ -1,3 +1,9 @@
+:root {
+  --mhleft: 30px;
+  --mhright: 50px;
+  --blue: #0ea5e9;
+  --gray: #e2e8f0;
+}
 body {
   margin: 0;
 }
@@ -12,6 +18,10 @@ header {
   grid-column: 2/3;
   grid-row: 1;
   border: 5px solid red;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
 }
 
 aside {
@@ -24,4 +34,100 @@ main {
   grid-row: 2;
   grid-column: 2;
   border: 5px solid green;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-left: var(--mhleft);
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.search-container img {
+  width: 30px;
+  height: 30px;
+}
+
+.search-input {
+  margin-left: 10px;
+  width: 50vw;
+  height: 20px;
+  border-radius: 15px;
+  background-color: var(--gray);
+  border: none;
+  padding: 5px;
+}
+
+.profile-container {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: var(--mhright);
+  margin-left: var(--mhleft);
+}
+
+.bell {
+  width: 30px;
+  height: 30px;
+}
+
+.user-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+}
+
+.user-name {
+  margin: 0;
+}
+
+.welcome-container {
+  display: flex;
+  gap: 30px;
+  margin-left: var(--mhleft);
+  align-items: center;
+}
+
+.welcome-container .user-profile {
+  width: 65px;
+  height: 65px;
+}
+
+.greeting,
+.user-name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.user-name {
+  font-size: 1.5rem;
+}
+
+.welcome-message {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+header .btns-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-right: var(--mhright);
+  margin-left: var(--mhleft);
+}
+
+header button {
+  background-color: var(--blue);
+  border: none;
+  border-radius: 20px;
+  padding: 8px;
+  width: 100px;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
