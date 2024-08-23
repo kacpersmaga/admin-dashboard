@@ -240,6 +240,19 @@ main {
       overflow: hidden;
       text-overflow: ellipsis;
     }
+    & li:not(:last-child) {
+      position: relative;
+      padding-bottom: 5px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background-color: color-mix(in srgb, black, transparent 85%);
+        bottom: 0;
+      }
+    }
   }
   .trends {
     .card {
