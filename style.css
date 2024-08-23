@@ -139,6 +139,13 @@ header button {
   color: white;
   font-size: 0.9rem;
   font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+  &:hover {
+    background-color: #007bff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .logo img {
@@ -159,8 +166,13 @@ header button {
   color: white;
 }
 
-aside ul {
+aside li {
   margin-left: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: rgba(0, 123, 255, 0.2);
+  }
 }
 
 aside ul li img {
