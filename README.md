@@ -40,7 +40,7 @@ This project was a valuable experience in learning and applying **CSS Grid Layou
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/admin-dashboard.git
+   git clone https://github.com/kacpersmaga/admin-dashboard.git
    cd admin-dashboard
    ```
 
